@@ -1,0 +1,75 @@
+
+    body{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        height: 90vh;
+        background-image: url(../static/assert/reg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .reg-box{
+        width: 70%;
+        height: 400px;
+        
+        
+    }
+    H2{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #faf9f9;
+    }
+    table{
+        width: 100%;
+        border: 1px solid #faf6f6;
+       
+    }
+    label{
+        padding-left: 2REM;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #faf9f9;
+  
+    }
+    input{
+        width: 60%;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border: none;
+        font-size: medium;
+        background: transparent;
+        color: #faf9f9;
+        border-bottom: 1px solid #f5f0f0;
+    }
+    input[type="text"]{
+        width: 60%;
+        padding: 10px;
+        margin: 10px;
+    }
+    input[type="submit"]{
+        background-color: #9752CF;
+        color: rgb(241, 238, 238);
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+        padding: 1rem;
+        margin-left: 30%;
+        border-radius: 20PX;
+    }
+    .reg{
+           text-align: center;
+           color: #faf9f9;
+            padding: 2px;
+            font-size: 1.2rem;
+            
+        }
+    a{
+        text-decoration: none;
+        color: violet
+    }
+  

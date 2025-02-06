@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>LOGIN</title>
+</head>
+<body>
+    <nav>
+        <h1>MARK EVALUATION</h1>
+
+        <ul>
+            <li><a href="/home">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+           
+        </ul>
+    </nav>
+    <section>
+            <h1><h1>Welcome to Mark Evaluation</h1>
+            <p>Please select  to continue
+        <div class="log-box">
+
+            <div class="log teacher">
+                <img src="../static/assert/teacher.png" alt="">
+                <h2>TEACHER</h2>
+            </div>
+            <div class="log student">
+                <img src="../static/assert/students.png" alt="">
+                <h2>STUDENT</h2>
+            </div>
+        </div>
+
+        
+    </section>
+    <footer>
+        <p>&copy; 2025 MARK EVALUATION</p>
+    </footer>
+</body>
+
+    <script>
+        const teacher = document.querySelector('.teacher');
+        const student = document.querySelector('.student');
+
+        teacher.addEventListener('click',()=>{
+            window.location.href = '/teacherlog';
+        });
+        student.addEventListener('click',()=>{
+            window.location.href = '/studentlog';
+        });
+    </script>
+
+</html>

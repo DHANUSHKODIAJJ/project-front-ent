@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+section{
+   
+    background-image:url('../static/assert/login.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 90vh;
+
+}
+section h1{
+    padding-top: 2%;
+    font-size: 3rem;
+    color: #9752cf;
+    text-align: center;
+    
+    
+}
+section p {
+    font-size: 1em;
+    color: #0e0800;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.log-box{
+    animation: fadeIn 0.2s;
+    margin: 0% auto;
+    left: 50%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+    
+    
+   
+    
+}
+@keyframes fadeIn {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.log{
+    border-radius: 50%;
+    width: 30%;
+    background: #f5f5f5;
+}
+.log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        height: 90vh;
+    }
+    section h1 {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+    .log-box {
+        width: 80%;
+        margin-top: 40%;
+    }
+    .log {
+        width: 40%;
+    }
+}

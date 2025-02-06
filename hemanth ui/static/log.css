@@ -1,0 +1,85 @@
+
+        section{
+          
+            background: none;
+          
+          align-items: center;
+          max-height: 70vh;
+        }
+       
+        .login-box{
+       
+            min-width: 50%;
+            min-height: 20vh;
+            margin: 0 auto;
+           
+            padding: 20px;
+            background:  #c7c7c7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: transparent;;
+        }
+    
+        
+        table{
+            width: 100%;
+            margin: 0 auto;
+            left: 50%;
+            font-weight: 600;
+        }
+        h2{
+            text-align: center;
+            color: #9752cf;
+            font-size: 30px;
+            margin: 0;
+            padding: 2px;
+        }
+      
+        input{
+            min-width: 100%;
+            padding: 5px;
+            margin: 7px 0;
+            border-radius: 5px;
+            border: 1px solid #9752cf;
+            
+        }
+        input[type="submit"]{
+            background: #9752cf;
+            min-width: 20%;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 70%;
+            
+        }
+        .container{
+                       
+            color: #9752cf;
+            background-color: #c7c7c7; 
+            background-image:url('../static/assert/login.jpg') ; 
+            background-size: cover;
+            background-position: center;
+        }
+        .container h1{
+            text-align: center;
+            color: #9752cf;
+            font-size: 40px;
+            margin: 0;
+            padding: 2px;
+            
+        }
+        .container p{
+            text-align: center;
+            font-size: 1rem;
+        }
+        .reg{
+            text-align: center;
+            color: #9752cf;
+             padding: 2px;
+             font-size: 1.2rem;
+            
+        }
+
+  
