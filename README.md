@@ -5,5 +5,5 @@ This project is a web application for teachers and students. After login validat
 
 ##   WORK 
 - Teacher login redirects to `teachDash.html`.
-- Student login redirects to `studeDash.html`.
+- Student login redirects to `studDash.html`.
 - Dynamic injection of user information into the navbar.
