@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background :linear-gradient(to right, #9752cf, #c7c7c7,white); 
+   
+}
+nav h1{
+    margin-left: 20px;
+    color: #fafafa;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+
+}
+.login-info{
+    background :linear-gradient(to left,  #c7c7c7,white); 
+}
+
+section h1{
+    font-size: 2.5rem;
+    color: #9752cf;
+    text-align: center;
+}
+.sidenav{
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    background: #c7c7c7;
+    
+  
+}
+.sidenav h2{
+    color: #9752cf;
+    font-size: 2rem;
+    padding: 10px;
+    margin-top: 20px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+li {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.options a{
+    text-decoration: none;
+    color: #9752cf;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+.options i{
+    margin-right: 10px;
+}
+.options a:hover{
+    color: #333;
+}
+
+.main-content{
+    margin-left: 20%;
+
+    padding: 20px;
+    background: #f5f5f5;
+    width: 80%;
+    height: 100%;
+}
+
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+
+.center{
+    height: 70vh;
+   
+}
+ h2{
+    color: #9752cf;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+form{
+    margin-left: 20%;
+    margin-top: 20px;
+}
+label{
+    font-size: 1.2rem;
+   font-style: italic;
+    color: #7c05dd
+}
+input[type="file"]{
+    width: 50%;
+    border: 1px solid #7c05dd;
+    
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    margin: 10px;
+    border: 1px solid #9752cf;
+    border-radius: 5px;
+}
+.grp td {
+   font-size: 1.2rem;
+   font-style: italic;
+    color: #7c05dd
+}
+input[type="submit"]{
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+ 
+    background: #850fe6;
+    color: #fafafa;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.sec{
+    background-image: url('../static/assert/get.gif');
+    background-size: cover;
+    padding:4rem;
+    background-position-y: 35%;
+    
+}
+h1{
+    color: #550299;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+  nav h1 {
+    margin-left: 10px;
+  }
+  ul {
+    
+    margin-right: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .sidenav {
+        width: 20%;
+  }
+  .sidenav h2 {
+    font-size: 1rem;
+  }
+  .options {
+    margin-left: 10px;
+  }
+  .options a {
+    font-size: 1rem;
+  }
+ 
+  form {
+    margin-left: 10%;
+  }
+  input[type="file"] {
+    width: 80%;
+  }
+  input[type="submit"] {
+    width: 80%;
+  }
+}
