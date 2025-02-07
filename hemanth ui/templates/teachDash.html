@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../static/dash.css">
+    <title>Teacher Dashboard</title>
+</head>
+<body>
+    
+        <nav>
+            <h1>MARK EVALUATION</h1>
+    
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <!-- hemanth mamey passing a login name below a li tag py  -->
+                <li class="login-info">{login information}</li>
+                
+            </ul>
+        </nav>
+
+        <section>
+            <h1></h1>
+            <div class="sidenav">
+                <h2>Teacher Dashboard</h2>
+                <ul class="options">
+                    <li><a href="#" data-content="elv"><i class="fa-solid fa-gears" style="color: #4009e4;"></i>Evaluate</a></li>
+                    <li><a href="#" data-content="gms"><i class="fa-solid fa-check" style="color: #4009e4;"></i>Get Marks</a></li>
+                    <li><a href="#" data-content="clm"><i class="fa-solid fa-circle-up" style="color: #4009e4;"></i>Class Marks</a></li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <div class="content" id="elv">
+                        <div class="center">
+                            <h2>Mark Evaluation</h2>
+
+                            <form action="" method="post">
+                                <label for="upload">Upload File</label>
+                                <input type="file" webkitdirectory mozdirectory accept="image/*" />
+                                <table class="grp">
+                                    <tr >
+                                        <td>Student Name</td>
+                                        <td><input type="text" name="name" id="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Student Rollno</td>
+                                        <td><input type="text" name="rollno" id="rollno"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date Of Birth</td>
+                                        <td><input type="date" name="dob" id="dob"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Number</td>
+                                        <td><input type="text" name="mobile" id="mobile"></td>
+                                    </tr>
+                                   
+                                </table>
+                                <tr collspan="2">
+                                    <input type="submit" value="Submit">
+                                </tr>
+                            </form>
+                        </div>
+                </div>
+                <div class="content" id="gms">
+                        <div class="center">
+                            <h2>Get Marks</h2>
+                            <form action="" method="get">
+                               <table class="grp">
+                                 <tr>
+                                    <td>Roll No</td>
+                                    <td><input type="text" name="rollno" id="rollno"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Mobile No</td>
+                                    <td><input type="text" name="mobile" id="mobile"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>DOB</td>
+                                    <td><input type="date" name="dob" id="dob"></td>
+                                 </tr>
+                                 <tr>
+                                    <td>Class </td>
+                                    <td><input type="text" name="class" id="class"></td>
+                                 </tr>
+                               </table>
+                               <input type="submit" value="Get Marks">
+                            </form>
+                                <h3>display  marks </h3>
+                            <div class="show-Marks">
+                                <table>
+
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                <div class="content" id="clm">
+                        <div class="center">
+                            <h2>GET ALL STUDENT MARKS</h2>
+                            <form action="" method="get">
+                                <table class="grp">
+                                    <tr>
+                                        <td>Enter  a Class</td>
+                                        <td><input type="text" name="class" id="class"></td>
+                                    </tr>
+
+                                </table>
+                                <input type="submit" value="Get Marks">
+                            </form>
+                            <h3>Display all marks</h3>
+                            <table>
+
+                            </table>
+                        </div>
+                </div>
+            </div>
+         
+        </section>
+    
+    
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        const links = document.querySelectorAll('.options a');
+        const display = document.querySelectorAll('.content');
+        links.forEach((link=>{
+            link.addEventListener('click',function(e){
+                e.preventDefault();
+
+                display.forEach((dis=>{
+                    dis.classList.remove('active');
+                }))
+                const content = this.getAttribute('data-content');
+
+                document.getElementById(content).classList.add('active');
+            })
+        }))
+        display[0].classList.add('active');
+    })
+</script>
+</html>

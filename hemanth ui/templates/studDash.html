@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../static/dash.css">
+    <title>STUDENT Dashboard</title>
+</head>
+<body>
+    
+        <nav>
+            <h1>MARK EVALUATION</h1>
+    
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <!-- hemanth mamey passing a login name below a li tag py  -->
+                <li class="login-info">{login information}</li>
+                
+            </ul>
+        </nav>
+
+        <div class="sec">
+
+        
+            <h1>HEY STUDENT CHECK YOUR MARKS HERE</h1>
+        </div>
+            <div class="center">
+                <h2>Get Marks</h2>
+       
+                <form action="" method="get">
+                   <table class="grp">
+                     <tr>
+                        <td>Roll No</td>
+                        <td><input type="text" name="rollno" id="rollno"></td>
+                     </tr>
+                     <tr>
+                        <td>Mobile No</td>
+                        <td><input type="text" name="mobile" id="mobile"></td>
+                     </tr>
+                     <tr>
+                        <td>DOB</td>
+                        <td><input type="date" name="dob" id="dob"></td>
+                     </tr>
+                     <tr>
+                        <td>Class </td>
+                        <td><input type="text" name="class" id="class"></td>
+                     </tr>
+                   </table>
+                   <input type="submit" value="Get Marks">
+                </form>
+       
+                    <h3>display  marks </h3>
+                <div class="show-Marks">
+                    <table>
+
+                    </table>
+                </div>
+            </div>
+        
+
+</body>
